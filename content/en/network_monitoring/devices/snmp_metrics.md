@@ -116,7 +116,7 @@ snmp_listener:
   loader: core  # use core check implementation of SNMP integration. recommended
   use_device_id_as_hostname: true  # recommended
   configs:
-    - network_address: 10.10.0.0/24  # CIDR subnet
+    - network_address: 192.168.1.0/24  # CIDR subnet
       loader: core
       snmp_version: 2
       port: 161
@@ -124,7 +124,7 @@ snmp_listener:
       tags:
       - "key1:val1"
       - "key2:val2"
-    - network_address: 10.20.0.0/24
+    - network_address: 192.168.7.0/24
       loader: core
       snmp_version: 2
       port: 161
